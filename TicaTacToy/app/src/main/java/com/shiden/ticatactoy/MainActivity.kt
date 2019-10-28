@@ -10,6 +10,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.log
 import java.util.*
+import kotlin.math.log2
 
 
 class MainActivity : AppCompatActivity() {
@@ -174,13 +175,32 @@ class MainActivity : AppCompatActivity() {
 
         if (ganador == 1){
 
-            Toast.makeText(this,"El ganador de la partida es el jugador 1", Toast.LENGTH_LONG).show()
+            var lo1 = 0
+
+            Toast.makeText(this,"El ganador de la partida es el jugador 1", Toast.LENGTH_SHORT).show()
+           // contador(1)
+
+            lo1 += 1
+
+            Log.d("Log1",lo1.toString())
 
         }else if (ganador == 2){
 
-            Toast.makeText(this,"El ganador de la partida es el jugador 2", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"El ganador de la partida es el jugador 2", Toast.LENGTH_SHORT).show()
+            //contador(2)
+
+            var lo2 = 0
+
+            lo2 += 1
+
+            Log.d("Log2", lo2.toString())
 
         }
+
+
+
+
+
 
 
 
@@ -225,6 +245,56 @@ class MainActivity : AppCompatActivity() {
         }
 
         jugar(btnid, btnSel)
+
+
+
+
+
+    }
+
+
+    fun resetGame(){
+
+
+
+        jugador1.clear()
+        jugador2.clear()
+
+
+
+
+
+
+
+    }
+
+
+    fun contador(contador:Int){
+
+        var contadorJugador1 = 0
+        var contadorJugador2 = 0
+
+
+
+        if (contador == 1){
+
+           contadorJugador1 += 1
+
+
+
+
+        }
+        if (contador == 2){
+
+            contadorJugador2 += 1
+
+
+        }
+
+        Toast.makeText(this,"Jugador 1 $contadorJugador1 , Jugador 2 $contadorJugador2", Toast.LENGTH_LONG).show()
+
+
+
 
 
 
