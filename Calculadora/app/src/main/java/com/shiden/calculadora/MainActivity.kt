@@ -12,12 +12,27 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        buEq.isEnabled=false
+        operadores(false)
+
+
+
     }
+
+
+        var equalbtn = true
+
+
+
+
 
 
 
 
     fun buNumberEvent(view:View){
+
+
 
         if (newOp == true){
 
@@ -25,6 +40,10 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+        operadores(true)
+
+
 
         newOp = false
 
@@ -143,6 +162,7 @@ class MainActivity : AppCompatActivity() {
     var op = "*"
 
 
+
     fun buOpEvent(view: View){
 
         val buSelect = view as Button
@@ -186,10 +206,14 @@ class MainActivity : AppCompatActivity() {
 
         newOp = true
 
-        Log.d("boton/", buDev.id.toString())
-        Log.d("boton*", buMul.id.toString())
-        Log.d("boton+", buSum.id.toString())
-        Log.d("boton-", buSub.id.toString())
+        equalbtn = false
+
+        if (equalbtn == false){
+
+            buEq.isEnabled = true
+
+        }
+
 
 
 
@@ -198,6 +222,10 @@ class MainActivity : AppCompatActivity() {
 
 
     fun buEqEvent (view: View) {
+
+
+
+
 
 
 
@@ -240,6 +268,44 @@ class MainActivity : AppCompatActivity() {
         etShowNumber.setText(finalNumber.toString())
         newOp = true
 
+
+
+            buEq.isEnabled = false
+
+
+
+
+
+    }
+
+    fun porcentaje (view: View){
+
+        var numero:Double = etShowNumber.text.toString().toDouble()/100
+
+        etShowNumber.setText(numero.toString())
+        newOp = true
+
+    }
+
+    fun clean (view: View){
+
+        etShowNumber.setText("")
+
+        newOp = true
+        operadores(false)
+        buEq.isEnabled = false
+
+
+    }
+
+
+    fun operadores (reto:Boolean){
+
+        buSum.isEnabled = reto
+        buSub.isEnabled = reto
+        buMul.isEnabled = reto
+        buDev.isEnabled = reto
+        buPo.isEnabled = reto
 
 
     }
