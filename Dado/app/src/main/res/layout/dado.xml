@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#2C2E30"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="30dp"
+        >
+
+            <ImageView
+                android:id="@+id/dado1"
+                android:background="@drawable/dado6_aq"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/dado2"
+                android:background="@drawable/dado1_aq"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/dado3"
+                android:background="@drawable/dado3_aq"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="20dp">
+
+    <Button
+        android:id="@+id/btnRoll"
+        android:text="Roll"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory app:title="dialogs">
+        <EditTextPreference
+            app:dialogTitle="dialog_title_edittext_preference"
+            app:key="edittext"
+            app:title="title_edittext_preference"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:dialogTitle="dialog_title_list_preference"
+            app:entries="@array/entries"
+            app:entryValues="@array/entry_values"
+            app:key="list"
+            app:title="title_list_preference"
+            app:useSimpleSummaryProvider="true" />
+        <MultiSelectListPreference
+            app:dialogTitle="dialog_title_multi_list_preference"
+            app:entries="@array/entries"
+            app:entryValues="@array/entry_values"
+            app:key="multi_select_list"
+            app:summary="summary_multi_list_preference"
+            app:title="Next"
+            />
+        <Preference
+            app:title="Next"
+            app:summary="xml android"
+            app:fragment="com.shiden.dado.Settings$AndroidPreference"
+
+            />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

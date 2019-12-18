@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="21sp"
+        android:text="Uno"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="21sp"
+        android:text="Dos"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="21sp"
+        android:text="Tres"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="21sp"
+        android:text="Cuatro"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="30dp"
+        >
+        <LinearLayout
+            android:id="@+id/dado1Lay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/dado1"
+                android:background="@drawable/dado6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/dado2x"
+                android:background="@drawable/dado1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/dado3"
+                android:background="@drawable/dado3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vuelta"
+        android:text="Vuelta"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="entries">
+       <item>1</item>
+       <item>2</item>
+       <item>3</item>
+       <item>4</item>
+   </string-array>
+
+    <string-array name="entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="color">
+        <item>Turquesa</item>
+        <item>Rojo</item>
+        <item>Blanco</item>
+        <item>Rosa</item>
+        <item>Azul</item>
+    </string-array>
+    <string-array name="colorValues">
+        <item>#0ce9e9</item>
+        <item>#e91732</item>
+        <item>#FFFFFF</item>
+        <item>#d97be3</item>
+        <item>#7bc0e3</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false">
+
+    <EditTextPreference
+        android:inputType="textPersonName"
+        android:key="nomsh"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Desconocido"
+        android:title="Nombre" />
+    <EditTextPreference
+        android:inputType="number"
+        android:key="edatsh"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edad"
+        android:summary="00"/>
+
+
+</PreferenceScreen>

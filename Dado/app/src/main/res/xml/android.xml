@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="user_category"
+        android:title="Player 1">
+
+        <EditTextPreference
+            android:key="nombrePlayer1"
+            android:title="Nombre"
+            android:summary="Nombre a mostrar en partida"
+            android:hint="Player1"
+            android:dialogTitle="Nombre Player 1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            android:inputType="textFilter"
+            android:maxLength="7"
+            />
+
+
+        <ListPreference
+
+            android:key="fondo"
+            android:title="Fondo"
+            android:summary="Selecciona el color del jugador"
+            android:entries="@array/color"
+            android:entryValues="@array/colorValues"
+            />
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="user_category"
+        android:title="Player 2">
+
+        <EditTextPreference
+            android:key="nombrePlayer2"
+            android:title="Nombre"
+            android:summary="Nombre a mostrar en partida"
+            android:hint="Player2"
+            android:dialogTitle="Nombre Player 2"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            android:inputType="textFilter"
+            android:maxLength="7"
+            />
+
+
+        <ListPreference
+
+            android:key="colorPlayer2"
+            android:title="ID Color"
+            android:summary="Selecciona el color del jugador"
+            android:entries="@array/entries"
+            android:entryValues="@array/entry_values"
+            />
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:title="Juego">
+
+        <EditTextPreference
+            android:key="preVidaIn"
+            android:title="Puntos de vida inicial"
+            android:hint="8000"
+            android:inputType="number"
+            android:maxLength="5"
+            android:summary="Puntos de vida totales al iniciar la partida"
+            />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

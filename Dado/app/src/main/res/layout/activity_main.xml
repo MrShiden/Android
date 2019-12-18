@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDados"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:text="Roll Dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#4AE490"/>
+
+    <LinearLayout
+        android:id="@+id/layout_dados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:layout_marginVertical="30dp"
+        >
+        <LinearLayout
+            android:id="@+id/dado1Lay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/dado"
+                android:background="@drawable/dado6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/dado2"
+                android:background="@drawable/dado1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/dado3"
+                android:background="@drawable/dado3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/roller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Roller"/>
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_dados"
+        app:layout_constraintVertical_bias="0.159"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
