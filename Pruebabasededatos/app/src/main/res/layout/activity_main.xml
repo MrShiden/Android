@@ -19,6 +19,7 @@
             android:id="@+id/iv_player1"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:scaleType="fitCenter"
             android:background="@drawable/image_player1"/>
 
         <Space
@@ -44,6 +45,8 @@
         android:inputType="textFilter"
         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
         android:hint="Accion"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
         android:maxLength="15"
         android:layout_gravity="center"/>
 
@@ -56,6 +59,8 @@
         <EditText
             android:id="@+id/et_descripcion"
             android:hint="Descipcion"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -104,7 +109,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="Cambio imagen"/>
 
 

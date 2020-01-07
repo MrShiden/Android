@@ -20,6 +20,8 @@ class DbManager {
     val sqlCreateTable =
         "CREATE TABLE IF NOT EXISTS $dbTable ($colID INTEGER PRIMARY KEY, $colAccion TEXT, $colPlayer TEXT,  $colDes TEXT);"
 
+
+
     var sqlDB: SQLiteDatabase? = null
 
     constructor(context: Context) {

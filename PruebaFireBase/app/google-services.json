@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "390803380906",
+    "firebase_url": "https://pruebafirebase-3defc.firebaseio.com",
+    "project_id": "pruebafirebase-3defc",
+    "storage_bucket": "pruebafirebase-3defc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390803380906:android:67afd95e6a53ce7a2fced3",
+        "android_client_info": {
+          "package_name": "com.shiden.pruebafirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390803380906-nl61s1mfmbrbinl93lsk9nqs1hsm9q3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shiden.pruebafirebase",
+            "certificate_hash": "615b07c9a3cdf35b0b91db8bfbb2584ed1af76ad"
+          }
+        },
+        {
+          "client_id": "390803380906-8leegh4opg5arqmmilqqrhm7b2o59h6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGACgcJGPW9dHSdYHiW5IdnnjDNl8GKPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390803380906-8leegh4opg5arqmmilqqrhm7b2o59h6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

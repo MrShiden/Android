@@ -2,4 +2,6 @@
     <string name="app_name">Prueba base de datos</string>
     <string name="accion">Accion</string>
     <string name="descripcion">Descripcion</string>
+    <string name="title_activity_base1">base1</string>
+    <string name="title_activity_glide">Glide</string>
 </resources>

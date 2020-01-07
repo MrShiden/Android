@@ -4,6 +4,7 @@ package com.shiden.notesapp
 import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.icu.text.CaseMap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -124,8 +125,12 @@ class MainActivity : AppCompatActivity() {
 
         override fun getView(p0: Int, p1: View?, p2:ViewGroup?): View {
 
+
+
             var myView= layoutInflater.inflate(R.layout.ticket,null)
             var myNode = listNotesAdapter[p0]
+
+
             myView.tvTitle.text = myNode.nodeName
             myView.tvContent.text = myNode.nodeDes
             myView.btnBorrar.setOnClickListener(View.OnClickListener {
@@ -133,12 +138,16 @@ class MainActivity : AppCompatActivity() {
                 var dbManager=DbManager(this.context!!)
                 val selectionArgs =  arrayOf(myNode.nodeID.toString())
                 dbManager.Delete("ID=?",selectionArgs)
+                loadQuery("%")
+                tostada()
 
             })
 
             myView.btnEditar.setOnClickListener(View.OnClickListener {
 
-                GoToUpdate(myNode)
+               GoToUpdate(myNode)
+
+
 
             })
 
@@ -153,6 +162,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getItemId(p0: Int): Long {
+
 
             return p0.toLong()
         }
@@ -171,5 +181,10 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("des",note.nodeID)
 
         startActivity(intent)
+    }
+
+    fun tostada(){
+
+       Toast.makeText(this,"Se elimino la nota correctamente",Toast.LENGTH_SHORT).show()
     }
 }

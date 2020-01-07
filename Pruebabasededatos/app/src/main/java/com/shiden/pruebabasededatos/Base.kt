@@ -15,6 +15,7 @@ import android.widget.BaseAdapter
 import android.widget.SearchView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_base.*
+import kotlinx.android.synthetic.main.activity_base.view.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.ticket.view.*
 
@@ -26,15 +27,14 @@ class Base : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)
 
-        //listNotes.add(Note(1,"Que pedo", "1"))
-        //listNotes.add(Note(2,"Que tranza", "2"))
-        //listNotes.add(Note(3,"Que onda", "3"))
 
 
 
         loadQuery("%")
 
     }
+
+
 
     override fun onResume() {
         super.onResume()

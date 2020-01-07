@@ -6,12 +6,13 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
-import android.os.Build.*
-
+import android.os.Build.VERSION_CODES
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             if (Build.VERSION.SDK_INT >= VERSION_CODES.M){
 
                 if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)==
-                        PackageManager.PERMISSION_DENIED){
+                    PackageManager.PERMISSION_DENIED){
 
                     val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
 
@@ -52,6 +53,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_PICK)
        intent.type = "image/ *"
         startActivityForResult(intent, IMAGE_PICK_CODE)
+
+
+
 
     }
 
@@ -90,7 +94,14 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (resultCode == Activity.RESULT_OK && requestCode == IMAGE_PICK_CODE){
             image_view.setImageURI(data?.data)
+
+
+
         }
     }
+
+
+
+
 
 }

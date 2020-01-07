@@ -8,10 +8,15 @@
     android:background="@color/fondo"
     tools:context=".MainActivity">
 
+
+
     <ListView
         android:id="@+id/lvNotes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="1dp" >
+
+    </ListView>
+
 </LinearLayout>
